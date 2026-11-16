@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Funciones2 {
 	
-	private static void kilogramosALibras() {
+	public static void kilogramosALibras() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Introduce los kilogramos: ");
         double kg = sc.nextDouble();
@@ -12,7 +12,7 @@ public class Funciones2 {
         System.out.println(kg + " kg equivalen a " + libras + " libras");
     }
 	
-	private static void librasAKilogramos() {
+	public static void librasAKilogramos() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Introduce las libras: ");
         double libras = sc.nextDouble();
