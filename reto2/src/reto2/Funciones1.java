@@ -3,6 +3,22 @@ package reto2;
 import java.util.Scanner;
 
 public class Funciones1 {
+	
+	public static void millasAkm(Scanner sc) {
+
+		System.out.print("Introduce las millas: ");
+		double millas = sc.nextDouble();
+		double km = millas * 1.60934;
+		System.out.println("Kilometros: " + km);
+	}
+
+	public static void kmAmillas(Scanner sc) {
+		System.out.print("Introduce los kilometros: ");
+		double km = sc.nextDouble();
+		double millas = km / 1.60934;
+		System.out.println("Millas: " + millas);
+	}
+	
 
 	public static void menuLongitud(Scanner sc) {
 
@@ -10,11 +26,10 @@ public class Funciones1 {
 
 		do {
 
-			System.out.println("\n===== MENU LONGITUD =====");
+			System.out.println("\n Elige menú de longitud");
 			System.out.println("1. Millas a kilometros");
 			System.out.println("2. Kilometros a millas");
 			System.out.println("0. Volver al menu principal");
-			System.out.print("Elige una opcion: ");
 
 			opcion = sc.nextInt();
 
@@ -29,34 +44,12 @@ public class Funciones1 {
 				break;
 
 			case 0:
-				System.out.println("Volviendo al menu principal...");
-				break;
-
-			default:
-				System.out.println("Opcion incorrecta.");
+				System.out.println("Saliendo");
 				break;
 			}
 
 		} while (opcion != 0);
 	}
+}
 
-	public static void millasAkm(Scanner sc) {
-
-		System.out.print("Introduce las millas: ");
-		double millas = sc.nextDouble();
-
-		double km = millas * 1.60934;
-
-		System.out.println("Kilometros: " + km);
-	}
-
-	public static void kmAmillas(Scanner sc) {
-
-		System.out.print("Introduce los kilometros: ");
-		double km = sc.nextDouble();
-
-		double millas = km / 1.60934;
-
-		System.out.println("Millas: " + millas);
-	}
-	}
+	
